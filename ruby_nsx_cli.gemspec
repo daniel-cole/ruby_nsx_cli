@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Daniel Cole"]
   spec.email         = ["dannycole12@gmail.com"]
 
-  spec.summary       = %q{Simple Ruby VMWare NSX API Client to create}
+  spec.summary       = %q{UNDER DEVELOPMENT: Simple Ruby VMWare NSX API Client to create and interact with NSX objects}
   spec.homepage      = "https://github.com/daniel-cole"
   spec.license       = "MIT"
 

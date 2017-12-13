@@ -81,6 +81,7 @@ class NSXEdgeTest < Minitest::Test
     dhcp_pool_args = {
         :edge_id => edge_id,
         :ip_range => '10.250.32.2-10.250.32.254',
+        :subnet_mask => '255.255.255.0',
         :default_gateway => '10.250.32.1',
         :domain_name => 'api.test250',
         :primary_name_server => '8.8.8.8',

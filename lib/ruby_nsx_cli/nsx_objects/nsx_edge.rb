@@ -98,13 +98,14 @@ module RubyNsxCli
     # @param secondary_name_server [String] Secondary DNS
     # @param lease_time [Integer] DHCP lease time. Defaults to 3600
     # @return [RestClient::Response] Response from the NSX API
-    def add_simple_dhcp_pool(edge_id:, ip_range:, default_gateway:, domain_name:, primary_name_server:, secondary_name_server:, lease_time:)
+    def add_simple_dhcp_pool(edge_id:, ip_range:, subnet_mask:, default_gateway:, domain_name:, primary_name_server:, secondary_name_server:, lease_time:)
 
       api_endpoint = "/api/4.0/edges/#{edge_id}/dhcp/config/ippools"
 
       simple_dhcp_pool_hash = {
           :ip_range => ip_range,
           :default_gateway => default_gateway,
+          :subnet_mask => subnet_mask,
           :domain_name => domain_name,
           :primary_name_server => primary_name_server,
           :secondary_name_server => secondary_name_server,
